@@ -1,5 +1,5 @@
-@import '_fonts';
-@import '_variables';
+// @import './_fonts';
+@import './_variables';
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,7 +10,7 @@
 }
 
 html {
-  font-family: Roboto, sans-serif;
+  // font-family: Roboto, sans-serif;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -32,7 +32,7 @@ a {
 
 body {
   background: #ececec;
-  font-family: Roboto;
+  //  font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;

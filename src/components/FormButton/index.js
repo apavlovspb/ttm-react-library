@@ -2,7 +2,8 @@
 import React from 'react'
 // import { useSelector } from 'react-redux';
 // import { access } from 'Helpers';
-import './style.scss'
+import globalStyle from '../theme/assets/styles/global.scss'
+import style from './style.scss'
 
 const FormButton = React.memo(
   ({
@@ -27,14 +28,15 @@ const FormButton = React.memo(
     //     </button>
     //   );
     // }
+    console.log(style)
     return (
       <button
         {...props}
         type={type}
         onClick={onClick}
-        className={`form-button gfs-bold  ${color} ${customClass} ${
-          small ? 'small' : ''
-        }`}
+        className={`${style['form-button']} ${globalStyle['gfs-bold']}  ${
+          style[color]
+        } ${customClass} ${small ? style['small'] : ''}`}
       >
         {children}
       </button>
