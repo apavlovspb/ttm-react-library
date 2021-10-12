@@ -7,7 +7,8 @@
 ## Install
 
 ```bash
-npm install --save ttm-react-library
+npm install --save ttm-react-library-test
+yarn add ttm-react-library-test
 ```
 
 ## Usage
