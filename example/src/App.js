@@ -1,24 +1,19 @@
 import React from 'react'
-
-import { FormButton } from 'ttm-react-library'
+import { ToolButton } from 'ttm-react-library'
 import 'ttm-react-library/dist/index.css'
 
+const icon = 'fas fa-pen'
+
 const App = () => {
-  const accesses = ['user', 'user+']
   return (
     <div>
-      <FormButton
-        type='button'
-        color='black'
-        accesses={accesses}
-        checkAccess='user+'
-        small
-        onClick={() => {
-          console.log('hello')
+      <ToolButton
+        icon={icon}
+        tooltip='testTool'
+        click={() => {
+          console.log('myTiooolsd')
         }}
-      >
-        Mty
-      </FormButton>
+      />
     </div>
   )
   // return <ExampleComponent text="Create React Library Example 😄" />

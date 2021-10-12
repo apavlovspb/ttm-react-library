@@ -1,9 +1,5 @@
-import React from 'react'
-import styles from './styles.module.css'
 import FormButton from './components/FormButton'
+import ButtonWithTooltip from './components/Tooltip/ButtonWithTooltip'
+import ToolButton from './components/ToolButton'
 
-export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
-
-export { FormButton }
+export { FormButton, ButtonWithTooltip, ToolButton }

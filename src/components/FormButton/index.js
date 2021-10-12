@@ -1,7 +1,7 @@
 /* eslint-disable react/button-has-type */
 import React from 'react'
 import { access } from '../../Helpers'
-import globalStyle from '../theme/assets/styles/global.scss'
+import globalStyle from '../../theme/assets/styles/global.scss'
 import style from './style.scss'
 
 const FormButton = React.memo(

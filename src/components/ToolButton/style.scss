@@ -1,0 +1,24 @@
+@import '../../theme/assets/styles/variables';
+.form-button {
+  min-width: 34px;
+  width: 34px;
+  height: 34px;
+  font-size: 16px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+  background: transparent;
+  &:hover {
+    cursor: pointer;
+  }
+  &.disabled {
+    border: none;
+    box-shadow: none;
+    color: $color7;
+    background: transparent;
+
+    &:hover {
+      background: transparent;
+      color: $color7;
+    }
+  }
+}
