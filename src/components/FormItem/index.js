@@ -32,9 +32,9 @@ const FormItem = React.memo(
       },
       [onChange]
     )
-
+    console.log(style)
     return (
-      <div className={`${style['form-item-group']} ${style.color}`}>
+      <div className={`${style['form-item-group']} ${style[color]}`}>
         <input
           ref={input}
           {...props}
