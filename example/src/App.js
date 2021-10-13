@@ -1,10 +1,18 @@
 import React from 'react'
-import { ToolButton } from 'ttm-react-library'
+import { Dropdown, useDropdown } from 'ttm-react-library'
 import 'ttm-react-library/dist/index.css'
 
-const icon = 'fas fa-pen'
+const limitPage = [
+  { id: 'test', title: 'Test' },
+  { id: 'test2', title: 'Test2' }
+]
 
 const App = () => {
+  const { currentItem, itemList, changeItem, id, title } = useDropdown(
+    limitPage,
+    'id',
+    'title'
+  )
   return (
     <div
       style={{
@@ -15,12 +23,13 @@ const App = () => {
         justifyContent: 'center'
       }}
     >
-      <ToolButton
-        icon={icon}
-        tooltip='testTool'
-        click={() => {
-          console.log('myTiooolsd')
-        }}
+      <Dropdown
+        current={currentItem}
+        itemList={itemList}
+        changeItem={changeItem}
+        id={id}
+        title={title}
+        name='Limit'
       />
     </div>
   )
