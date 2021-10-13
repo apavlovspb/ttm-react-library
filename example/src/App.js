@@ -1,5 +1,5 @@
 import React from 'react'
-import { Dropdown, useDropdown } from 'ttm-react-library'
+import { Dropdown, useDropdown, CSVDownloads } from 'ttm-react-library'
 import 'ttm-react-library/dist/index.css'
 
 const limitPage = [
@@ -23,13 +23,11 @@ const App = () => {
         justifyContent: 'center'
       }}
     >
-      <Dropdown
-        current={currentItem}
-        itemList={itemList}
-        changeItem={changeItem}
-        id={id}
-        title={title}
-        name='Limit'
+      <CSVDownloads
+        cb={() => {
+          console.log('cb')
+        }}
+        filename='testssvs'
       />
     </div>
   )
