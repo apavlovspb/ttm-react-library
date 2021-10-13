@@ -6,7 +6,15 @@ const icon = 'fas fa-pen'
 
 const App = () => {
   return (
-    <div>
+    <div
+      style={{
+        height: '500px',
+        width: '100%',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center'
+      }}
+    >
       <ToolButton
         icon={icon}
         tooltip='testTool'

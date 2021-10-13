@@ -14,7 +14,8 @@ yarn add ttm-react-library
 ```
 1. Install library
 2. Import React components
-3. Add props
+3. Import css styles from node_modules/${library_name}/dist/index.css in app.js
+4. Add props
 ```
 
 ## License
