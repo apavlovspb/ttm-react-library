@@ -13,19 +13,6 @@ yarn add ttm-react-library-test
 
 ## Usage
 
-```jsx
-import React, { Component } from 'react'
-
-import MyComponent from 'ttm-react-library'
-import 'ttm-react-library/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
-```
-
 ## License
 
 MIT © [apavlovspb](https://github.com/apavlovspb)
