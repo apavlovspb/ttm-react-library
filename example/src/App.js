@@ -3,7 +3,7 @@ import {
   Dropdown,
   useDropdown,
   CSVDownloads,
-  DateRange
+  AddButton
 } from 'ttm-react-library'
 import 'ttm-react-library/dist/index.css'
 
@@ -30,10 +30,9 @@ const App = () => {
         background: 'white'
       }}
     >
-      <DateRange
-        dateRange={dateRange}
-        setRange={() => {
-          console.log('test')
+      <AddButton
+        click={() => {
+          console.log('add')
         }}
       />
     </div>

@@ -5,6 +5,7 @@ import Dropdown, { useDropdown } from './components/Dropdown'
 import CSVDownloads from './components/CsvDownload'
 import DateRange from './components/DateRange'
 import FormItem from './components/FormItem'
+import AddButton from './components/AddButton'
 
 export {
   FormButton,
@@ -14,5 +15,6 @@ export {
   useDropdown,
   CSVDownloads,
   DateRange,
-  FormItem
+  FormItem,
+  AddButton
 }
