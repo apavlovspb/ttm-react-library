@@ -5,11 +5,17 @@
 ## Install
 
 ```bash
-npm install --save ttm-react-library-test
-yarn add ttm-react-library-test
+npm install --save ttm-react-library
+yarn add ttm-react-library
 ```
 
 ## Usage
+
+```
+1. Install library
+2. Import React components
+3. Add props
+```
 
 ## License
 
