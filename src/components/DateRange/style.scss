@@ -1,0 +1,11 @@
+.range {
+  display: grid;
+  grid-template-columns: 300px 300px 84px 1fr;
+  grid-gap: 12px;
+  border-top: 1px solid #c5c5c5;
+  margin-top: 12px;
+  padding-top: 12px;
+  .csv-dowload {
+    align-self: center;
+  }
+}

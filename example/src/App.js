@@ -1,11 +1,17 @@
 import React from 'react'
-import { Dropdown, useDropdown, CSVDownloads } from 'ttm-react-library'
+import {
+  Dropdown,
+  useDropdown,
+  CSVDownloads,
+  DateRange
+} from 'ttm-react-library'
 import 'ttm-react-library/dist/index.css'
 
 const limitPage = [
   { id: 'test', title: 'Test' },
   { id: 'test2', title: 'Test2' }
 ]
+const dateRange = { from: '2021-09-29', to: '2021-10-14' }
 
 const App = () => {
   const { currentItem, itemList, changeItem, id, title } = useDropdown(
@@ -23,11 +29,11 @@ const App = () => {
         justifyContent: 'center'
       }}
     >
-      <CSVDownloads
-        cb={() => {
-          console.log('cb')
+      <DateRange
+        dateRange={dateRange}
+        setRange={() => {
+          console.log('test')
         }}
-        filename='testssvs'
       />
     </div>
   )

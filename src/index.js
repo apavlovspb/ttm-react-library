@@ -3,6 +3,8 @@ import ButtonWithTooltip from './components/Tooltip/ButtonWithTooltip'
 import ToolButton from './components/ToolButton'
 import Dropdown, { useDropdown } from './components/Dropdown'
 import CSVDownloads from './components/CsvDownload'
+import DateRange from './components/DateRange'
+import FormItem from './components/FormItem'
 
 export {
   FormButton,
@@ -10,5 +12,7 @@ export {
   ToolButton,
   Dropdown,
   useDropdown,
-  CSVDownloads
+  CSVDownloads,
+  DateRange,
+  FormItem
 }
