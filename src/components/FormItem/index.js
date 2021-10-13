@@ -34,7 +34,7 @@ const FormItem = React.memo(
     )
 
     return (
-      <div className={`${style['form-item-group']} ${color}`}>
+      <div className={`${style['form-item-group']} ${style.color}`}>
         <input
           ref={input}
           {...props}
